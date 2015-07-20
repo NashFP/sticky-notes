@@ -10,6 +10,7 @@ Excerpt from http://beebole.com/blog/erlang/tutorial-web-application-erlang/
 >
 >Just keep in mind that stickyNotes is a one shot application that I’ve developed from scratch with the unique aim of illustrating the video example.
 
+[![Sticky Notes Video](/sticky-notes-vimeo.png)](https://vimeo.com/2007411)
 
 ## Playground
 For this playground, build a server backend using your functional language of choice that will support the Sticky Notes HTML/javascript front-end. 
