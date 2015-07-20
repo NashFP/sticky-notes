@@ -10,8 +10,9 @@ I invite you to download the example application (as illustrated in the video st
 
 Just keep in mind that stickyNotes is a one shot application that I’ve developed from scratch with the unique aim of illustrating the video example.
 ```
+<a href="https://vimeo.com/2007411">Tutorial to Start Developing Web Applications on Erlang</a> from 
+<a href="https://vimeo.com/beebole">BeeBole</a> on <a href="https://vimeo.com">Vimeo</a>.
 
-<iframe src="https://player.vimeo.com/video/2007411" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/2007411">Tutorial to Start Developing Web Applications on Erlang</a> from <a href="https://vimeo.com/beebole">BeeBole</a> on <a href="https://vimeo.com">Vimeo</a>.</p> <p>Start developing web applications using Erlang and Mochiweb.<br /> Related post: http://beebole.com/en/blog/erlang/tutorial-web-application-erlang/<br /> <br /> Discover more Erlang Tutorials: http://beebole.com/erlang/en/<br /> <br /> </p>
 
 ## Playground
 For this playground, build a server backend using your functional language of choice that will support the Sticky Notes HTML/javascript front-end. 
