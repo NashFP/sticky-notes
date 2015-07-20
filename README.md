@@ -9,9 +9,6 @@ Excerpt from http://beebole.com/blog/erlang/tutorial-web-application-erlang/
 >I invite you to download the example application (as illustrated in the video stickyNotes.zip) in order for you to understand all the pieces of the puzzle and to venture behind the scene.
 >
 >Just keep in mind that stickyNotes is a one shot application that I’ve developed from scratch with the unique aim of illustrating the video example.
-```
-<a href="https://vimeo.com/2007411">Tutorial to Start Developing Web Applications on Erlang</a> from 
-<a href="https://vimeo.com/beebole">BeeBole</a> on <a href="https://vimeo.com">Vimeo</a>.
 
 
 ## Playground
