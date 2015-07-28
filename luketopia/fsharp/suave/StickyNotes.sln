@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{D92B7636-A610-45BA-928B-913BC8C4F4C4}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StickyNotes", "StickyNotes.fsproj", "{725B4B4C-AC33-4A15-B059-F50F34B41C8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{725B4B4C-AC33-4A15-B059-F50F34B41C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725B4B4C-AC33-4A15-B059-F50F34B41C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725B4B4C-AC33-4A15-B059-F50F34B41C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725B4B4C-AC33-4A15-B059-F50F34B41C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
