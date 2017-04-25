@@ -14,7 +14,7 @@ Excerpt from http://beebole.com/blog/erlang/tutorial-web-application-erlang/
 
 ## Playground
 For this playground, build a server backend using your functional language of choice that will support the Sticky Notes HTML/javascript front-end. 
-Contribute your solution by adding a folder named {your twitter handle}/{your language}/{your web library} such as:
-`/bryan_hunter/elixir/phoenix`
+Contribute your solution by adding a folder named {your twitter handle}+{your language} such as:
+`/bryan_hunter+elm`
 
 You can push your changes, but it's more fun to submit your solution via pull-request. Time to play!
