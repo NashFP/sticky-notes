@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+	<head>
+		<title>stickyNotes</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+		<link href="css/application.css" rel="stylesheet" type="text/css"/>
+
+	</head>
+	<body>
+
+		<div id="cache">
+			<img src="images/add_hover.png"/>
+			<img src="images/color_picker_hover.png"/>
+			<img src="images/postit_pink.png"/>
+			<img src="images/postit_yellow.png"/>
+			<img src="images/postit_green.png"/>
+			<img src="images/postit_blue.png"/>
+			<img src="images/trash_active.png"/>
+			<img src="images/trash_hover.png"/>
+		</div>
+
+        <div id="elm"></div>
+	</body>
+    <script src="stickynotes.js"></script>
+    <script>
+        var node = document.getElementById('elm');
+        var app = Elm.Main.embed(node)
+    </script>
+</html>
