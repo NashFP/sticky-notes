@@ -32,6 +32,7 @@ type Msg = NewNote
     | DragStart String Position
     | DragAt Position
     | DragEnd Position
+    | ChangeColor String
 
 init : (Model, Cmd Msg)
 init =
@@ -45,6 +46,15 @@ view model =
             div [ id "add", class "add", onClick NewNote ] [] ],
           div [ id "board" ] 
             (renderNoteList 0 model.notes) ]
+
+nextColor : String -> String
+nextColor color =
+    case color of
+        "yellow" -> "pink"
+        "pink" -> "green"
+        "green" -> "blue"
+        "blue" -> "yellow"
+        _ -> "yellow"
 
 renderNoteList : Int -> List Note -> List (Html Msg)
 renderNoteList currZ notes =
@@ -61,7 +71,7 @@ renderNote note z =
                  ("left",(toString note.x)++"px"),
                  ("z-index",toString z) ]
         ]
-        [ div [class "picker"] [],
+        [ div [class "picker", onClick (ChangeColor note.id)] [],
           textarea [autocomplete False] [ text note.text ] ]
 
 subscriptions : Model -> Sub Msg
@@ -87,6 +97,8 @@ update msg model =
              Cmd.none )
         DragEnd _ ->
             ({ model | drag = Nothing }, Cmd.none)
+        ChangeColor id -> 
+            ({ model | notes = List.map (changeNoteColor id) model.notes }, Cmd.none)
 
 saveNoteXY : Note -> Note
 saveNoteXY note =
@@ -102,6 +114,12 @@ moveNote xy model =
             case model.notes of
                 [] -> model
                 (n::ns) -> {model | notes = (setNotePos xy start n) :: ns}
+
+changeNoteColor id note =
+    if note.id == id then
+        { note | color = nextColor note.color }
+    else
+        note
 
 setNotePos xy start note =
     {note | x = note.startX + xy.x - start.x, y = note.startY + xy.y - start.y }
@@ -119,9 +137,9 @@ dropNote id notes = List.filter (isNotNote id) notes
     
 addNewNote {notes, nextId, nextStart, drag} =
     let note =
-        Note ("note_"++(toString nextId)) (50+nextStart) (50+nextStart) 0 0 "yellow" "hello"
+        Note ("note_"++(toString nextId)) (50+nextStart) (50+nextStart) 0 0 "yellow" ""
     in
-        Model (note::notes) (nextId+1) ((nextStart+1) % 50) drag
+        Model (note::notes) (nextId+1) ((nextStart+10) % 150) drag
 
 onMouseDown : String -> Attribute Msg
 onMouseDown id =
