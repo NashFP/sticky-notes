@@ -61,7 +61,8 @@ renderNote note z =
                  ("left",(toString note.x)++"px"),
                  ("z-index",toString z) ]
         ]
-        [ text note.text ]
+        [ div [class "picker"] [],
+          textarea [autocomplete False] [ text note.text ] ]
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
